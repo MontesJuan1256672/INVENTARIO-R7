@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="getMarcaDeCable"
+    tools:context=".MarcaDeCable">
+
+    <TextView
+        android:id="@+id/textViewMarcaDeCable"
+        android:layout_width="298dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/marca_de_cable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="294dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMarcaDeCable">
+
+        <RadioButton
+            android:id="@+id/radioButtonMarca1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_marca1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMarca2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_marca2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSendMarcaCable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:onClick="getMarcaDeCable"
+        android:text="@string/send_marca_cable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

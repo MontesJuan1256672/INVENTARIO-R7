@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipoDeMaterial">
+
+    <TextView
+        android:id="@+id/tipo_material"
+        android:layout_width="162dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tipo_de_material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="239dp"
+        android:layout_height="439dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_material">
+
+        <RadioButton
+            android:id="@+id/radioButtonCable"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_cable"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_material"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonConectores"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_conectores"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRetenida"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_retenida"
+            tools:layout_editor_absoluteX="-35dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMontaje"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_montaje"
+            tools:layout_editor_absoluteX="-50dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHerraje"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_herraje"
+            tools:layout_editor_absoluteX="-48dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTorre"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_torre"
+            tools:layout_editor_absoluteX="-40dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAnclaje"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_anclaje"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonConsumibles"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_consumibles"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonTorenilleria"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_tornilleria" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRouter"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_router" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRadio"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_radio" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOtro"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/radio_button_otro" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_seleccion_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="SeleccionarMaterial"
+        android:text="@string/button_seleccion_de_material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

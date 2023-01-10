@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipoDeAnclaje">
+
+    <TextView
+        android:id="@+id/textView_tipo_anclaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/textview_tipo_de_anclaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup14"
+        android:layout_width="230dp"
+        android:layout_height="341dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tipo_anclaje">
+
+        <RadioButton
+            android:id="@+id/radioButtonAnclajeTorreOMastil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_anclaje_torre_o_mastil" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAnclajeAngulos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_anclaje_angulos" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAnclajeTensorOGancho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_anclaje_tensor_o_gancho" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAnclajeTensorOGancho3_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_tensor_gancho_3_6" />
+
+        <RadioButton
+            android:id="@+id/radioButton_anclaje_bandola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_anclaje_bandola" />
+
+        <RadioButton
+            android:id="@+id/radioButton_anclaje_otro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_anclaje_otro" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_select_tipo_anclaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:onClick="getTipoAnclaje"
+        android:text="@string/button_select_tipo_de_anclaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup14" />
+</androidx.constraintlayout.widget.ConstraintLayout>
