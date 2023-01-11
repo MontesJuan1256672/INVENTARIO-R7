@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Marcatornilleria">
+    tools:context=".MarcaTornilleria">
 
+    <TextView
+        android:id="@+id/textViewMarcaDeTornillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/textview_marca_tornillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup19"
+        android:layout_width="215dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMarcaDeTornillo">
+
+        <RadioButton
+            android:id="@+id/radioButtonMarcaTornillo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton__marca_tornillo_1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMarcaTornillo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_marca_tornillo2" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

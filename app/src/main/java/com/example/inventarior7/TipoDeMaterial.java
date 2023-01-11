@@ -151,6 +151,9 @@ public class TipoDeMaterial extends AppCompatActivity {
 
 
             //TODO salto a actividad TipoDeTornilleria
+            //salto a actividad TipoDeConsumibles
+            Intent tipoDeTornilleria = new Intent(getApplicationContext(), TipoDeTornilleria.class);
+            startActivity(tipoDeTornilleria);
         }
 
         else if(radBtnRouter.isChecked()) {

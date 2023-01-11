@@ -118,5 +118,17 @@
     <string name="radiobutton_marca_consumible1">Marca 1 pendiente</string>
     <string name="radiobutton_marca_consumible2">Marca 2 pendiente</string>
     <string name="buttonMarcaConsumible">Enviar</string>
+    <string name="textview_tipo_tornilleria">Indique el tipo de tornilleria</string>
+    <string name="radiobutton_madera">Madera</string>
+    <string name="radiobutton_lamina">Lámina</string>
+    <string name="radiobutton_concreto">Concreto</string>
+    <string name="radiobutton_tornillo_expansivo">Expansivo</string>
+    <string name="radiobutton_tornillo_otro">Otro</string>
+    <string name="button_select_tornillo">Seleccionar</string>
+    <string name="textview_otro_tornillo">Especifique tipo de tornillo</string>
+    <string name="button_otro_tornillo">enviar</string>
+    <string name="textview_marca_tornillo">Indique marca de tornillo</string>
+    <string name="radiobutton__marca_tornillo_1">Marca tornillo 1 pendiente</string>
+    <string name="radiobutton_marca_tornillo2">Marca tornillo 2 pendiente</string>
 
 </resources>

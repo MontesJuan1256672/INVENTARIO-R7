@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TipoDeTornilleria">
 
+    <TextView
+        android:id="@+id/textViewTipoTornilleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/textview_tipo_tornilleria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup18"
+        android:layout_width="192dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoTornilleria">
+
+        <RadioButton
+            android:id="@+id/radioButtonTornilloMadera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_madera" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTornilloLamina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_lamina" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTornilloConcreto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_concreto" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTornilloExpansivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_tornillo_expansivo" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTornilloOtro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_tornillo_otro" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSelectTipoTornillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:onClick="getTipoDeTornillo"
+        android:text="@string/button_select_tornillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup18" />
 </androidx.constraintlayout.widget.ConstraintLayout>
