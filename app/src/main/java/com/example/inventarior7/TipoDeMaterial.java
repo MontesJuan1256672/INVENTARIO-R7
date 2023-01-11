@@ -164,6 +164,8 @@ public class TipoDeMaterial extends AppCompatActivity {
 
 
             //TODO salto a actividad TipoDeRouter
+            Intent tipoDeRaouter = new Intent(getApplicationContext(), TipoDeRouter.class);
+            startActivity(tipoDeRaouter);
         }
 
         else if(radBtnRadio.isChecked()) {

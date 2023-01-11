@@ -130,5 +130,17 @@
     <string name="textview_marca_tornillo">Indique marca de tornillo</string>
     <string name="radiobutton__marca_tornillo_1">Marca tornillo 1 pendiente</string>
     <string name="radiobutton_marca_tornillo2">Marca tornillo 2 pendiente</string>
+    <string name="textview_tipo_de_router">Indique tipo de Router</string>
+    <string name="radiobutton_router_hAP">hAP</string>
+    <string name="radiobutton_router_RB1100">RB1100AHx4</string>
+    <string name="radiobutton_router_re2011">RB2011UiAS</string>
+    <string name="radiobutton_router_rb30aa">RB30AAUiAS</string>
+    <string name="radiobutton_router_rb4011">RB4011iGs</string>
+    <string name="radiobutton_router_hap_ac">hAP ac lite</string>
+    <string name="radiobutton_router_rb95">RB95Ui</string>
+    <string name="radiobutton_router_rb951g">RB951G</string>
+    <string name="radiobutton_router_rb5009">RB5009</string>
+    <string name="radiobutton_router_otro">Otro</string>
+    <string name="button_send_tipo_router">enviar</string>
 
 </resources>
