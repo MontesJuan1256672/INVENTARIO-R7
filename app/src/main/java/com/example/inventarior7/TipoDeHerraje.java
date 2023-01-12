@@ -1,3 +1,14 @@
+/*Si el usuario elige la opción de "Herraje" para dar de alta te envia a esta actividad en la que
+ * se elige que tipo de herraje es el que se va a entrar o salir.
+ *
+ * Se presentan diferentes opciones. Las 2 primeras se usarán para grabar que tipo de
+ * material es en la base de datos y posteriormente te salta a la actividad donde se captura la marca
+ * del material. La tercera opción manda al usuario a la actividad  en donde
+ * se le da la opción de capturar abiertamente que tipo de material es.
+ *
+ * Al final se le hace clear a el radioGroup para que así el usuario pueda capturar nueva información
+ */
+
 package com.example.inventarior7;
 
 import androidx.appcompat.app.AppCompatActivity;

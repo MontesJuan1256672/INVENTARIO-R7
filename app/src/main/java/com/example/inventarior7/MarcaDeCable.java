@@ -1,3 +1,8 @@
+/*Una vez que el usuario a seleccionado el tipo de cable y dicha información se guardo correctamente
+* en la base de datos se salta a esta actividad en donde se captura la marca del producto, (opciones
+* pendientes)
+*/
+
 package com.example.inventarior7;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +33,6 @@ public class MarcaDeCable extends AppCompatActivity {
     public void getMarcaDeCable(View view){
         int secs = 2;
 
-
         if (marcaCable1.isChecked()){
             str = "marca de cable 1";
 
@@ -41,14 +45,10 @@ public class MarcaDeCable extends AppCompatActivity {
             //TODO almacenar marca de cable en BD
         }
 
-
         Toast.makeText(getApplicationContext(),str,Toast.LENGTH_SHORT).show();
-
 
         Snackbar entradaBD_send = Snackbar.make(view, BD, Snackbar.LENGTH_LONG);
         entradaBD_send.show();
-
-
 
         //despues de un delay de 2 segundos saltar a MainActivity
         Utils.delay(secs, new Utils.DelayCallBack() {

@@ -1,3 +1,7 @@
+/*Una vez que el usuario a seleccionado el tipo de anclaje y dicha información se guardo
+* correctamente en la base de datos se salta a esta actividad en donde se captura la marca del
+* producto, (opciones pendientes)
+*/
 package com.example.inventarior7;
 
 import androidx.appcompat.app.AppCompatActivity;

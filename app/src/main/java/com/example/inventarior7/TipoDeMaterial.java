@@ -1,7 +1,12 @@
+/*En esta pantalla el usuario elige el tipo (clasificación) de material que entra o sale.
+* La información que se recupere de esta actividad se guardará en una columna de la base de datos
+* que indica que tipo de material es.
+*
+* El usuario solo puede elegir uno de las opciones
+*/
 package com.example.inventarior7;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +15,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class TipoDeMaterial extends AppCompatActivity {
+    //declarar varaibles para radio button para el tipo de material
     private RadioButton radBtnCable;
     private RadioButton radBtnConectores;
     private RadioButton radBtnRetenida;
@@ -25,6 +31,7 @@ public class TipoDeMaterial extends AppCompatActivity {
 
     private String str;
 
+    //variables para el radio group se necesita para hacer clear a los radio button
     private RadioGroup radioGroup;
 
     @Override
@@ -49,6 +56,8 @@ public class TipoDeMaterial extends AppCompatActivity {
 
     }
 
+    //método vinculado al boton del layout activity_tipo_de_material.xml por medio de onClick
+    //cuando el usuaro seleciona el boton se ejecuta este codigo
     public void SeleccionarMaterial(View view){
 
         if(radBtnCable.isChecked()) {
